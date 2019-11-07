@@ -85,6 +85,7 @@ header {
 		
 		a {
 			color: black;
+			text-decoration: none;
 		}
 	}
 }
@@ -122,6 +123,18 @@ main {
 		section.info-section {
 			.info-section-font();
 			.info-section-layout();
+
+			.info-section-text {
+				border: 1px solid black;
+				border-radius: 20px;
+				background-color: white;
+				padding: 20px 20px;
+
+				.info-section-list {
+					list-style-type: circle;
+					list-style-position: inside;
+				}
+			}
 		}
 
 		.intro-section-text-sub {
@@ -147,8 +160,4 @@ h4 {
 
 hr {
 	border-color: @gold-color;
-}
-
-a {
-	text-decoration: none;
 }
